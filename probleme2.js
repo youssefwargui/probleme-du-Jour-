@@ -15,9 +15,9 @@ x()
 // 2- Crée une fonction qui prend un nombre et retourne "divisible par 3", "divisible par 5" ou "autre" selon le cas.
 
 function div(nombre) {
-    if (nombre / 3 ) {
+    if (nombre % 3 === 0) {
       return   "divisible par 3"
-    } else if (nombre / 5 ) { 
+    } else if (nombre % 5 === 0 ) { 
         return "divisible par 5"
     }
     return "autre"
