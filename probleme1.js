@@ -31,7 +31,7 @@ nombre (4,5)
 
 
 function chaîne(string,number) {
-    return 
+    return string.charAt()
 }
 
 
