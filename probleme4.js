@@ -40,10 +40,10 @@ vitesse()
 // s’il est divisible par 2 OU par 3
 // MAIS PAS par les deux en même temps
 function div(n) {
-    if (n % 2 === 0 || n % 3 === 0) {
-        return true
-    } else (n % 2 === 0 && n % 3 === 0){
+    if (n % 2 === 0 && n % 3 === 0) {
         return false
+    } else if(n % 2 === 0 || n % 3 === 0) {
+        return true
     }
     
 }
