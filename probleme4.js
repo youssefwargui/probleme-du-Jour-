@@ -15,7 +15,7 @@ nombres()
 function str(c) {
     return c === ""
 }
-str()
+str
 
 
 
@@ -42,8 +42,10 @@ vitesse()
 function div(n) {
     if (n % 2 === 0 || n % 3 === 0) {
         return true
+    } else (n % 2 === 0 && n % 3 === 0){
+        return false
     }
-    return false
+    
 }
 div()
 
