@@ -6,9 +6,10 @@ function nombres() {
     
     var n = 0
     
-    while (n < 10) {
-        n = n + 1
+    while (n <= 10) {
         console.log(n)
+        n = n + 1
+        
     }
 }
 
@@ -18,9 +19,10 @@ function nombres() {
 
   function nombre(n) {
     
-    while (n > 0 ) {
+    while (n >= 0 ) {
+        console.log(n)
     n = n - 1 
-    console.log(n)
+    
     }
 
   }
@@ -33,8 +35,9 @@ function nombres() {
 
 function  nmb(n) {
     var x = "Bonjour"
-    while (n < 0) {
+    while (n > 0) {
+        console.log(x)
+        n = n -1
         
-        console.log(n)
     }
 }
