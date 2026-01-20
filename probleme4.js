@@ -1,7 +1,7 @@
 // 1- Crée une fonction qui prend deux nombres et retourne :
 // "égaux" s’ils sont identiques
 // "différents" sinon
-function nombres(n1 , n2) {
+function nombres(n1, n2) {
     if (n1 === n2) {
         return "égaux"
     } return "différents"
@@ -24,7 +24,7 @@ str
 // "normal" si entre 30 et 90
 // "rapide" si supérieure à 90
 function vitesse(v) {
-    if (v < 30 ) {
+    if (v < 30) {
         return "lent"
     } else if (v < 90) {
         return "normal"
@@ -42,10 +42,10 @@ vitesse()
 function div(n) {
     if (n % 2 === 0 && n % 3 === 0) {
         return false
-    } else if(n % 2 === 0 || n % 3 === 0) {
+    } else if (n % 2 === 0 || n % 3 === 0) {
         return true
     }
-    
+
 }
 div()
 
