@@ -17,6 +17,7 @@ function factorielleN(n) {
 function afficheMultiplesDe3(n) {
     var result = 1
     while (n > 0 ) {
+
         result = result * 3
         n++
     }
