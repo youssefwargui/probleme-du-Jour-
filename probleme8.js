@@ -12,7 +12,7 @@ function bln(n) {
 
 function inv(ch) {
     result = ""
-    for (var i = 0; i <= ch.length-1  ; i--) {
+    for (var i = 0; i <= ch.length-1  ; i++) {
         console.log(i)
        result += i
         
@@ -41,17 +41,11 @@ function supp(tab) {
 // 5- Crée une fonction pour trouver le premier nombre divisible par 3 et 5 entre 1 et 50 avec une boucle while
 
 function div(nombre) {
-    
-    while (nombre >= 1 && nombre <= 50) {
+    var nombre = 1
+    while (nombre <= 50) {
         if (nombre % 3 === 0 && nombre % 5 === 0) {
-            return nombre + " divisible par 3 et 5"
+            return nombre +  " nombre divisible par 3 et 5"
         }
-        else if (nombre % 3 === 0){
-            return nombre + " nombre divisible par 3"
-        }
-        else if (nombre % 5 === 0){
-            return nombre + " nombre divisible par 5"
-        }
-        else return "try again"
+        nombre++
     }
 }
