@@ -21,7 +21,7 @@ function augmenté(nombre) {
   map (nombre , function (n){
     nombre =  n * 10/100
   })
-  return nombre
+  
 }
 
 // 2 - Écrire une fonction qui prend un tableau de phrases et retourne un tableau contenant le nombre de lettres de chaque phrase (sans compter les espaces) en utilisant each .
@@ -37,9 +37,9 @@ function lettres(nombres) {
 function afficheLaMoyenne(nombres) {
   var somme = 0 
   each(nombres , function(n , i){
-  somme += n[i] / nombres.length
+  somme += n[i] 
   })
-  return somme
+  return somme / nombres.length
 }
 
 // 4 - Écrire une fonction appelée agesEnMinutes qui
