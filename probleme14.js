@@ -75,8 +75,8 @@ var data = [
 // highestPopulation(data); ==> [{country: "China", population: 1409517397},{country: "India", population: 1339180127}]
 
 function highestPopulation(arrayOfObjects) {
-      each(arrayOfObjects , function(el){
-       
+     return filter(arrayOfObjects , function(el){
+       return el.population > 500000000
       })
 }
 highestPopulation(data)
@@ -110,9 +110,9 @@ halveAll(numsArray)
 // values({first : 5, second: 'something' , third : 129}) ==> [5, 'something', 129];
 
 function values(obj) {
-  var tab = []
+  
   each(obj , function(c){
-    
+   return Object.values(obj)
   })
 }
 
@@ -126,8 +126,6 @@ function values(obj) {
 
 function shortestString(strings) {
   each(strings , function(el){
-    if () {
-      
-    }
+    
   })
 }
