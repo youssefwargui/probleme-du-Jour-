@@ -30,7 +30,13 @@ function nomComplet(tableau, position) {
 // plusLongNom(seauDeParesseux);
 // => { nom: { prenom: "Poilu", deuxiemePrenom: "Dangereux", nomDeFamille: "Assassin" }, age: 2 }
 function plusLongNom(seauDeParesseux) {
-  // TODO : votre code ici
+  var max = seauDeParesseux[0]
+  for (var i = 1 ; i < seauDeParesseux.length ; i++){
+     if(seauDeParesseux[i] > max){
+      seauDeParesseux[i]
+     }
+     return max
+  }
 }
 
 // - créer un modèle de données pour représenter vos camarades de classe
@@ -79,12 +85,15 @@ function afficherAmi(classe) {
 }
 
 function ajouterAmi(classe){
-return classe.push(cam3)
+ classe.push(cam3)
+ return classe
 }
 
 function recherche(classe,recherche) {
-  if(classe.id.include(recherche) ||
-    classe.id.include(recherche)){
+  for(var i = 0 ; i < classe.length ; i++){
+    if(classe.id.includes(recherche) ||
+    classe.nom.includes(recherche)){
       return classe
+  }
     }
 }
