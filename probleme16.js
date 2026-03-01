@@ -13,24 +13,15 @@
 // starBucks(3)  => "Nous n'avons plus de petits gâteaux"
 
 function creerCafe(cafés,gâteaux) {
-    var somme = cafés + gâteaux 
-    
-    return{
-        cafe : function (){
-             if (cafés <= 0 ){
-        return "Nous n'avons plus de cafés" 
-        }
-        } ,
-        petitGateau : function (){
-             if (gâteaux  <= 0) {
-            return "Nous n'avons plus de petits gâteaux"
-        }
-        } ,
-      servirClient : function () {
-        if (somme >= 0) {
-            somme--
-            return "Nous avons servi " + somme + "clients et il reste " + cafés + "cafés et " + gâteaux + "petits gâteaux"
+    return  function servirClient  (clients) {
+        if (clients <= cafés && clients <= gâteaux) {
+          cafés = cafés- clients
+          gâteaux = gâteaux - clients
+          return "Nous avons servi " + clients + " clients et il reste " + cafés + " cafés et " + gâteaux + " petits gâteaux"
         }   
-      }  
-    }
+        else if (cafés < clients ){
+         return "Nous n'avons plus de cafés"
+        }
+          return "Nous n'avons plus de gâteaux "
+      } 
 }
