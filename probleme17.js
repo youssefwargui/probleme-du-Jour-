@@ -52,7 +52,7 @@ function ListeDeLivres() {
             Titre : Titre,
             Genre : Genre , 
             Auteur : Auteur ,
-            Lu : true,
+            Lu : false,
             DateDeLecture : null
         }
 }  
